@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="funciones.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+        
+        <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css" />
+        <link rel="stylesheet" href="style.css">
+        <title>Calculos</title>
+    </head>
+<body style="background-color: rgba(44, 105, 85, 0.52);">
+    <div id="general">
+    <h1>Meotodos de depresiacion >:D</h1><br>
+    <h3>-----Linea Recta</h3>
+    <br>
+    <div id="lr">
+    <input type="number" id="vL" placeholder="Valor en Libros">
+    <input type="number" id="vR" placeholder="Valor de Rescate">
+    <input type="number"id="vU" placeholder="Vida Util">  
+    <input type="button" class="btn btn-primary"  id="calc" value="CALCULAR" onclick="linea_Recta(document.getElementById('vL').value, document.getElementById('vR').value
+    ,document.getElementById('vU').value,document.getElementById('year').value)">
+
+    <br>
+    <br>
+    <h4>Depreciacion Anual y Depreciacion Mensual</h4>
+    <input type="text" id="dA" readonly placeholder="Anual">
+    <input type="text" id="dM" readonly placeholder="Mensual">
+    
+ 
+    <br><br> <br><br>
+    <h3>----Suma de Digitos</h3>
+    <input type="number" id="year" placeholder="Años"><br><br>
+    <input type="button" class="btn btn-success" value="CALCULAR" onclick="determinarFactor(document.getElementById('year').value, document.getElementById('vL').value, document.getElementById('vR').value)">
+
+    <div id="response"></div>
+</div>
+</div>
+</body>
+</html>
